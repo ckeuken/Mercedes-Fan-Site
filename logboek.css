@@ -1,0 +1,21 @@
+#grid-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-left: 15rem;
+}
+
+#logboek-form{
+  margin-top: 2rem;
+  color: #fff;
+}
+
+#logboek-form input[type=text],
+#logboek-form input[type=textarea]{
+  padding: 0.5rem;
+  width: 50%;
+ 
+}
+

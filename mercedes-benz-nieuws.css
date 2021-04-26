@@ -1,0 +1,14 @@
+.articles-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.articles-container button{
+  margin-top: 1rem;
+}
+
+.fas{
+  padding: 0.5rem;
+}

@@ -1,0 +1,130 @@
+.menu ul{
+  flex-direction: column;
+}
+
+#a-button{
+  font-size: 16px;
+  width: 50%;
+}
+
+header{
+  flex-direction: column;
+}
+
+.row{
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+/*Intro*/
+#section-A,
+#section-B{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/*Logboek*/
+#grid-container{
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
+
+#logboek-archief{
+  margin-top: 1rem;
+}
+
+#logboek-form input[type=text],
+#logboek-form input[type=textarea]{
+  width: 100%;
+}
+
+#gastenboek_header{
+  font-size: 3rem;
+}
+
+#geschied_header{
+  font-size: 2.6rem;
+}
+
+#nieuws_header{
+  font-size: 1.5rem;
+}
+
+/*Geschiedenis*/
+#timeline ul li div{
+    width: 250px;
+  }
+
+#timeline ul li:nth-child(even) div{
+    left: -284px;
+}
+
+
+#time-line ul li{
+   margin-left: 20px;
+}
+
+#time-line ul li div{
+    width: calc(100vw - 90px);
+}
+
+#time-line ul li:nth-child(even) div{
+    left: 40px;
+}  
+
+#time-line ul li:nth-child(even) div:before{
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent var(--secundary-color) transparent transparent;
+}
+
+/*MB-nieuws*/
+.articles-container{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+/*Footer*/
+#main-footer{
+  flex-direction: column;
+} 
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  .menu ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #mbn{
+    grid-column-start: 2;
+  }
+ 
+  .row{
+    display: flex;
+    flex-direction: column;
+    margin-left: -10rem;
+    margin-top: 5rem;
+    gap: 2rem;
+  }
+
+  .row .column img{
+    width: auto;
+    height: auto;
+  }
+
+  #grid-container{
+    margin-left: 13rem;
+  }
+
+  #logboek-form input[type=text]{
+    width: 60%;
+  }
+
+  #main-footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}

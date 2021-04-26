@@ -1,0 +1,214 @@
+:root{
+  --primary-color: #898a8c;
+  --secundary-color: #05357e;
+  --body-background: #1d1f25;
+  --menu-color: #afb4bd;
+  --button-color: #4c5d77;
+  --button-hover: #384558;
+  --menu-speed: 0.75s;
+}
+
+*{box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html{
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--body-background);
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+.logo{
+  height: 150px;
+  width: 150px;
+  border: none;
+  padding: 1rem;
+}
+
+.menu{
+  background-color: var(--menu-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.menu ul{
+  display: flex;
+}
+
+.menu ul li a{
+  padding: 2rem;
+}
+
+/*Image-container*/
+#image-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Slide-show container*/
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13rem;
+} 
+
+.row > .column{
+  padding: 0 8px;
+}
+
+.row:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.column{
+  float: left;
+  width: 25%;
+  cursor: pointer;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+}
+
+/*Modal content*/
+.modal-content{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/*Kruisje*/
+.close{
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+  color: var(--secundary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides{
+  display: none;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+/*Prev & Next button*/
+.prev,
+.next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/*Positioneer prev button aan linkerkant*/
+.prev{
+  left: 0;
+}
+
+/*Positioneer next button aan rechter kant*/
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*Bij hover zwarte achterground met opacity*/
+.prev:hover,
+.next:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*numbertext*/
+.numbertext{
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img{
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+.demo{
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover{
+  opacity: 1;
+}
+
+img.hover-shadow{
+  transition: 0.3s;
+}
+
+.hover-shadow:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Action button*/
+#action-button{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+
+#a-button{
+  text-decoration: none;
+  width: 25%;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
